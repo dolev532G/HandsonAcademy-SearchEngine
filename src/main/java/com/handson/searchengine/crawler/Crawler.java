@@ -49,7 +49,7 @@ public class Crawler {
 
         CrawlerRecord rec = queue.peek();
         var stopReason = getStopReason(rec);
-        setCrawlStatus(crawlId,CrawlStatus.of(rec.getDistance(), rec.getStartTime(), 0 , null));
+        setCrawlStatus(crawlId,CrawlStatus.of(rec.getDistance(), rec.getStartTime(), 0 , stopReason));
 
     }
 
